@@ -14,7 +14,6 @@ except ImportError:
 
 # set TRACE_LLM_BACKEND to "openai" or "anthropic"
 # defaults to anthropic if OPENAI_API_KEY is not set
-import os
 TRACE_LLM_BACKEND = "openai" if (os.environ.get("OPENAI_API_KEY") and OPENAI_AVAILABLE) else "anthropic"
 TRACE_LLM_MODEL = os.environ.get("TRACE_LLM_MODEL", "gpt-4.1" if TRACE_LLM_BACKEND == "openai" else "claude-opus-4-5")
 
@@ -353,7 +352,7 @@ def analyze_file(filepath):
     try:
         tree = ast.parse(source, filename=filepath)
     except SyntaxError as e:
-        print(f"Skipping {filepath} — syntax error: {e}")
+        print(f"Skipping {filepath} - syntax error: {e}")
         return []
 
     call_graph = build_call_graph(tree)
@@ -428,7 +427,7 @@ Respond ONLY in this exact JSON format. No text outside the JSON.
   "fix": "the corrected version of the sink call"
 }}
 
-Use "needs_review" when the finding is ambiguous — for example when some inputs are
+Use "needs_review" when the finding is ambiguous - for example when some inputs are
 parameterized but others are not, or when the sanitization present may be incomplete."""
 
     raw = llm_call(prompt, max_tokens=1024)
@@ -443,7 +442,7 @@ parameterized but others are not, or when the sanitization present may be incomp
 
 
 # --- Phase 2: Challenger ---
-# adversarial pass — the LLM is asked to argue AGAINST the finding
+# adversarial pass - the LLM is asked to argue AGAINST the finding
 # if it can't find a strong argument, the finding is real
 # this reduces false positives and prevents confirmation bias
 
@@ -583,7 +582,7 @@ def run_audit(repo_path, threshold=0.7):
                 print(f"    Suppressed by Confirmer: {raw['sink']}")
                 continue
             if verdict == "needs_review":
-                # report as MEDIUM confidence — needs human triage
+                # report as MEDIUM confidence - needs human triage
                 finding = {
                     "file":               raw["file"],
                     "line":               raw["line"],
@@ -595,7 +594,7 @@ def run_audit(repo_path, threshold=0.7):
                     "reasoning":          p1.get("reasoning", ""),
                     "fix":                p1.get("fix", ""),
                     "challenge_score":    None,
-                    "challenge_rationale": "needs_review — not sent to Challenger",
+                    "challenge_rationale": "needs_review - not sent to Challenger",
                     "verdict":            "needs_review",
                 }
                 print(f"    Needs review [MEDIUM]: {raw['sink']}")
@@ -662,7 +661,7 @@ def taint_walk_broad(arg_node, assignments, param_names, depth=0):
         return True, [ast.unparse(arg_node)]
 
     if BROAD_MODE and isinstance(arg_node, ast.Name) and arg_node.id in param_names:
-        return True, [f"{arg_node.id} (function parameter — untrusted in broad mode)"]
+        return True, [f"{arg_node.id} (function parameter - untrusted in broad mode)"]
 
     if isinstance(arg_node, ast.Call):
         for inner_arg in arg_node.args:
@@ -761,7 +760,8 @@ def analyze_function_broad(func_node, filename, call_graph=None):
 
 def analyze_file_broad(filepath):
     # same as analyze_file but uses broad source model
-    import auditzoo.agents.sqli_auditor.auditor as _self
+    import sys
+    _self = sys.modules[__name__]
     old_mode = _self.BROAD_MODE
     _self.BROAD_MODE = True
 
@@ -771,7 +771,7 @@ def analyze_file_broad(filepath):
         try:
             tree = ast.parse(source)
         except SyntaxError as e:
-            print(f"Skipping {filepath} — syntax error: {e}")
+            print(f"Skipping {filepath} - syntax error: {e}")
             _self.BROAD_MODE = old_mode
             return []
 
@@ -906,7 +906,7 @@ def taint_walk_full(arg_node, assignments, attr_assignments,
     # broad: a None sentinel means this variable came from a function parameter
     if isinstance(arg_node, ast.Name) and arg_node.id in assignments:
         if assignments[arg_node.id] is None:
-            return True, [f"{arg_node.id} (function parameter — untrusted)"]
+            return True, [f"{arg_node.id} (function parameter - untrusted)"]
 
     # follow variable assignments backward
     if isinstance(arg_node, ast.Name):
@@ -914,7 +914,7 @@ def taint_walk_full(arg_node, assignments, attr_assignments,
         if var_name in assignments:
             av = assignments[var_name]
             if av is None:
-                return True, [f"{var_name} (function parameter — untrusted)"]
+                return True, [f"{var_name} (function parameter - untrusted)"]
             if is_source(av):
                 return True, [f"{var_name} = {ast.unparse(av)}"]
             if isinstance(av, (ast.BinOp, ast.JoinedStr, ast.Call)):
@@ -937,7 +937,7 @@ def taint_walk_full(arg_node, assignments, attr_assignments,
                 if tainted:
                     return True, flow + [f"{var_name} = {ast.unparse(av)}"]
 
-    # Level 3: self.x attribute read — check if that attribute was tainted
+    # Level 3: self.x attribute read - check if that attribute was tainted
     if isinstance(arg_node, ast.Attribute):
         attr_name = arg_node.attr
         if attr_name in attr_assignments:
@@ -1058,7 +1058,7 @@ def analyze_file_full(filepath, global_cg=None):
             source = f.read()
         tree = ast.parse(source)
     except SyntaxError as e:
-        print(f"Skipping {filepath} — syntax error: {e}")
+        print(f"Skipping {filepath} - syntax error: {e}")
         return []
 
     local_cg = build_call_graph(tree)
@@ -1093,7 +1093,7 @@ def analyze_file_full(filepath, global_cg=None):
         param_names = [arg.arg for arg in func_node.args.args]
 
         # always mark params as broad sources with None sentinel
-        # even if they were reassigned later — the reassigned value may
+        # even if they were reassigned later - the reassigned value may
         # still be derived from the param (e.g. name = name or "default")
         for p in param_names:
             assignments[p] = None
@@ -1140,7 +1140,7 @@ SQL_SMELL_KEYWORDS = {
 }
 
 def function_smells_like_sql(func_source):
-    # quick check before calling the LLM — only run on functions
+    # quick check before calling the LLM - only run on functions
     # that actually contain SQL-related code
     return any(kw in func_source for kw in SQL_SMELL_KEYWORDS)
 
@@ -1201,7 +1201,7 @@ def analyze_file_llm(filepath, static_findings=None, global_cg=None):
         tree = ast.parse(source)
         lines = source.splitlines()
     except SyntaxError as e:
-        print(f"Skipping {filepath} — syntax error: {e}")
+        print(f"Skipping {filepath} - syntax error: {e}")
         return []
 
     # collect function names already found by static engine
@@ -1270,7 +1270,7 @@ def analyze_file_llm(filepath, static_findings=None, global_cg=None):
 
 def analyze_file_llm_only(filepath):
     # TRACE-LLM configuration: LLM detector + Confirmer + Challenger
-    # no static analysis — works on any language
+    # no static analysis - works on any language
     # detects via LLM, then filters with two-phase adversarial pipeline
     try:
         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
@@ -1278,7 +1278,7 @@ def analyze_file_llm_only(filepath):
         tree = ast.parse(source)
         lines = source.splitlines()
     except SyntaxError as e:
-        print(f"Skipping {filepath} — syntax error: {e}")
+        print(f"Skipping {filepath} - syntax error: {e}")
         return []
 
     confirmed = []
@@ -1314,7 +1314,7 @@ def analyze_file_llm_only(filepath):
             if finding is not None:
                 confirmed.append(finding)
         else:
-            # needs_review — include as medium confidence
+            # needs_review - include as medium confidence
             confirmed.append({
                 'file': filepath, 'line': func_node.lineno,
                 'function': func_node.name, 'sink': 'llm_detected',
