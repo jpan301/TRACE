@@ -1,0 +1,1602 @@
+[
+  {
+    "file": "safe_000.py",
+    "vulnerable": false,
+    "function": "get_bundles_indexing_state",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/debug_files/artifact_bundles.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_001.py",
+    "vulnerable": false,
+    "function": "format_mri_field_value",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/naming_layer/mri.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_002.py",
+    "vulnerable": false,
+    "function": "get_repos",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/bitbucket/client.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_003.py",
+    "vulnerable": false,
+    "function": "get_schema",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/athena.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_004.py",
+    "vulnerable": false,
+    "function": "_format_commits",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/vsts/repository.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_005.py",
+    "vulnerable": false,
+    "function": "_get_service_hooks",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/sentry_apps/tasks/service_hooks.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_006.py",
+    "vulnerable": false,
+    "function": "get_names",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/base/introspection.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_007.py",
+    "vulnerable": false,
+    "function": "_get_sequence_name",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/postgresql/schema.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_008.py",
+    "vulnerable": false,
+    "function": "_get",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/messages/storage/session.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_009.py",
+    "vulnerable": false,
+    "function": "_get_data_from_tables",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/influx_db_v2.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_010.py",
+    "vulnerable": false,
+    "function": "format_html",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/html.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_011.py",
+    "vulnerable": false,
+    "function": "_assertOptionsValues",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/tests.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_012.py",
+    "vulnerable": false,
+    "function": "validate",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/postgres/fields/hstore.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_013.py",
+    "vulnerable": false,
+    "function": "verbatim",
+    "repo": "DjangoSafe",
+    "source_file": "django/template/defaulttags.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_014.py",
+    "vulnerable": false,
+    "function": "signature",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/inspect.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_015.py",
+    "vulnerable": false,
+    "function": "test_full_suite_ignores_excluded_dirs",
+    "repo": "SentrySafe",
+    "source_file": ".github/workflows/scripts/test_calculate_backend_test_shards.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_016.py",
+    "vulnerable": false,
+    "function": "__init__",
+    "repo": "DjangoSafe",
+    "source_file": "django/http/response.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_017.py",
+    "vulnerable": false,
+    "function": "recent",
+    "repo": "RedashSafe",
+    "source_file": "redash/models/__init__.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_018.py",
+    "vulnerable": false,
+    "function": "get_schema",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/pinot.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_019.py",
+    "vulnerable": false,
+    "function": "into",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_020.py",
+    "vulnerable": false,
+    "function": "get",
+    "repo": "RedashSafe",
+    "source_file": "redash/handlers/groups.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_021.py",
+    "vulnerable": false,
+    "function": "post",
+    "repo": "RedashSafe",
+    "source_file": "redash/handlers/groups.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_022.py",
+    "vulnerable": false,
+    "function": "rfc3339_date",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/feedgenerator.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_023.py",
+    "vulnerable": false,
+    "function": "get_repositories",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/bitbucket/integration.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_024.py",
+    "vulnerable": false,
+    "function": "get_all_globally_privileged_users",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/backup/services/import_export/impl.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_025.py",
+    "vulnerable": false,
+    "function": "post",
+    "repo": "RedashSafe",
+    "source_file": "redash/handlers/alerts.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_026.py",
+    "vulnerable": false,
+    "function": "right_needs_parens",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_027.py",
+    "vulnerable": false,
+    "function": "resolve_boolean_condition",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/search/events/builder/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_028.py",
+    "vulnerable": false,
+    "function": "_annotate_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/tasks/queries/execution.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_029.py",
+    "vulnerable": false,
+    "function": "create",
+    "repo": "RedashSafe",
+    "source_file": "redash/cli/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_030.py",
+    "vulnerable": false,
+    "function": "preprocess_lhs",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/fields/json.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_031.py",
+    "vulnerable": false,
+    "function": "init_db",
+    "repo": "RedashSafe",
+    "source_file": "redash/models/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_032.py",
+    "vulnerable": false,
+    "function": "password_change",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/sites.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_033.py",
+    "vulnerable": false,
+    "function": "__init__",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_034.py",
+    "vulnerable": false,
+    "function": "add_prefix",
+    "repo": "DjangoSafe",
+    "source_file": "django/forms/forms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_035.py",
+    "vulnerable": false,
+    "function": "data",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/gis/gdal/raster/band.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_036.py",
+    "vulnerable": false,
+    "function": "_apply_terms",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_037.py",
+    "vulnerable": false,
+    "function": "handle_send_historical_data_to_seer",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/seer/anomaly_detection/store_data_workflow_engine.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_038.py",
+    "vulnerable": false,
+    "function": "__repr__",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_039.py",
+    "vulnerable": false,
+    "function": "decode",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/synapse/paginator.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_040.py",
+    "vulnerable": false,
+    "function": "build_raw",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/bitbucket_server/utils.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_041.py",
+    "vulnerable": false,
+    "function": "foreign_key",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_042.py",
+    "vulnerable": false,
+    "function": "test_class_with_parametrize_on_method",
+    "repo": "SentrySafe",
+    "source_file": ".github/workflows/scripts/test_calculate_backend_test_shards.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_043.py",
+    "vulnerable": false,
+    "function": "replace_table",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_044.py",
+    "vulnerable": false,
+    "function": "using",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_045.py",
+    "vulnerable": false,
+    "function": "_get_tables",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/yandex_disk.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_046.py",
+    "vulnerable": false,
+    "function": "redirect_to_login",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/auth/views.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_047.py",
+    "vulnerable": false,
+    "function": "get_existing_import_chunk",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/backup/services/import_export/impl.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_048.py",
+    "vulnerable": false,
+    "function": "_get_artifact_filter_context",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/preprod/vcs/status_checks/size/tasks.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_049.py",
+    "vulnerable": false,
+    "function": "create_table",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/query_results.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_050.py",
+    "vulnerable": false,
+    "function": "_get_from_tinybird",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/tinybird.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_051.py",
+    "vulnerable": false,
+    "function": "flush",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/runner/commands/presenters/consolepresenter.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_052.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/clickhouse/array.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_053.py",
+    "vulnerable": false,
+    "function": "__init__",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_054.py",
+    "vulnerable": false,
+    "function": "default_error",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/checks/model_checks.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_055.py",
+    "vulnerable": false,
+    "function": "as_sql",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/fields/related_lookups.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_056.py",
+    "vulnerable": false,
+    "function": "host",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/__init__.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_057.py",
+    "vulnerable": false,
+    "function": "format_source_url",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/github/integration.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_058.py",
+    "vulnerable": false,
+    "function": "as_postgresql",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/functions/uuid.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_059.py",
+    "vulnerable": false,
+    "function": "_apply_pagination",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_060.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_061.py",
+    "vulnerable": false,
+    "function": "translate_url",
+    "repo": "DjangoSafe",
+    "source_file": "django/urls/base.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_062.py",
+    "vulnerable": false,
+    "function": "_matches_query",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/preprod/size_analysis/grouptype.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_063.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/databricks.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_064.py",
+    "vulnerable": false,
+    "function": "determine_eligible_recipients",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/notifications/utils/participants.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_065.py",
+    "vulnerable": false,
+    "function": "serialize",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/api/serializers/models/project.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_066.py",
+    "vulnerable": false,
+    "function": "__init__",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/sql/compiler.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_067.py",
+    "vulnerable": false,
+    "function": "_index_include_sql",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/base/schema.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_068.py",
+    "vulnerable": false,
+    "function": "generate_groupby_statements",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/fields/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_069.py",
+    "vulnerable": false,
+    "function": "date_error_message",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_070.py",
+    "vulnerable": false,
+    "function": "_validate_returning_term",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_071.py",
+    "vulnerable": false,
+    "function": "handle_data",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/text.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_072.py",
+    "vulnerable": false,
+    "function": "_sqlite_mod",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/_functions.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_073.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_074.py",
+    "vulnerable": false,
+    "function": "get_users",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/auth/forms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_075.py",
+    "vulnerable": false,
+    "function": "run",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/sentry_metrics/querying/data/postprocessing/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_076.py",
+    "vulnerable": false,
+    "function": "__str__",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/gis/db/backends/postgis/models.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_077.py",
+    "vulnerable": false,
+    "function": "update",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_078.py",
+    "vulnerable": false,
+    "function": "_setup_environment",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/corporate_memory.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_079.py",
+    "vulnerable": false,
+    "function": "ignore_copy",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/utils.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_080.py",
+    "vulnerable": false,
+    "function": "_transform_result",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/influx_db.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_081.py",
+    "vulnerable": false,
+    "function": "_flatten",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/mongodb.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_082.py",
+    "vulnerable": false,
+    "function": "validate",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_083.py",
+    "vulnerable": false,
+    "function": "_apply_path_search",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/json_ds.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_084.py",
+    "vulnerable": false,
+    "function": "test_connection",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/graphite.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_085.py",
+    "vulnerable": false,
+    "function": "dec",
+    "repo": "DjangoSafe",
+    "source_file": "django/template/library.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_086.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_087.py",
+    "vulnerable": false,
+    "function": "get_value_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_088.py",
+    "vulnerable": false,
+    "function": "_filter",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/extraction.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_089.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/dgraph.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_090.py",
+    "vulnerable": false,
+    "function": "from_",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_091.py",
+    "vulnerable": false,
+    "function": "resolve_datetime64",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/search/events/fields.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_092.py",
+    "vulnerable": false,
+    "function": "get_db_prep_value",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/fields/__init__.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_093.py",
+    "vulnerable": false,
+    "function": "_is_span_eligible",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/issue_detection/detectors/query_injection_detector.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_094.py",
+    "vulnerable": false,
+    "function": "columns",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_095.py",
+    "vulnerable": false,
+    "function": "render",
+    "repo": "DjangoSafe",
+    "source_file": "django/template/defaulttags.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_096.py",
+    "vulnerable": false,
+    "function": "transform_orderby_for_error_upsampling",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/api/helpers/error_upsampling.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_097.py",
+    "vulnerable": false,
+    "function": "check",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/mysql/validation.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_098.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_099.py",
+    "vulnerable": false,
+    "function": "_send_server_message",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/mail/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_100.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/clickhouse/array.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_101.py",
+    "vulnerable": false,
+    "function": "_table_options_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_102.py",
+    "vulnerable": false,
+    "function": "check_setting_languages",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/checks/translation.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_103.py",
+    "vulnerable": false,
+    "function": "combine_duration_expression",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/operations.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_104.py",
+    "vulnerable": false,
+    "function": "parse_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/google_spreadsheets.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_105.py",
+    "vulnerable": false,
+    "function": "encode",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/auth/hashers.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_106.py",
+    "vulnerable": false,
+    "function": "_parse_arguments",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/extraction.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_107.py",
+    "vulnerable": false,
+    "function": "prepare_lookup_value",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/utils.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_108.py",
+    "vulnerable": false,
+    "function": "__init__",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_109.py",
+    "vulnerable": false,
+    "function": "get_public_serializer_formats",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/serializers/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_110.py",
+    "vulnerable": false,
+    "function": "builder",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/utils.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_111.py",
+    "vulnerable": false,
+    "function": "create_name_mapping_layers",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/naming_layer/mapping.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_112.py",
+    "vulnerable": false,
+    "function": "_body_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_113.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_114.py",
+    "vulnerable": false,
+    "function": "notify",
+    "repo": "RedashSafe",
+    "source_file": "redash/destinations/pagerduty.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_115.py",
+    "vulnerable": false,
+    "function": "get_entity_subscription",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/entity_subscription.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_116.py",
+    "vulnerable": false,
+    "function": "_as_select_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_117.py",
+    "vulnerable": false,
+    "function": "_setup_query",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/sql/subqueries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_118.py",
+    "vulnerable": false,
+    "function": "top",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_119.py",
+    "vulnerable": false,
+    "function": "get_new_connection",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/gis/db/backends/spatialite/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_120.py",
+    "vulnerable": false,
+    "function": "on_conflict",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_121.py",
+    "vulnerable": false,
+    "function": "to_python",
+    "repo": "DjangoSafe",
+    "source_file": "django/forms/fields.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_122.py",
+    "vulnerable": false,
+    "function": "bad_request",
+    "repo": "DjangoSafe",
+    "source_file": "django/views/defaults.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_123.py",
+    "vulnerable": false,
+    "function": "get_deserializer",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/serializers/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_124.py",
+    "vulnerable": false,
+    "function": "get_buffer_requests_from_control",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/sentry_apps/api/utils/webhook_requests.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_125.py",
+    "vulnerable": false,
+    "function": "format_subject",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/log.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_126.py",
+    "vulnerable": false,
+    "function": "select_format",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/lookups.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_127.py",
+    "vulnerable": false,
+    "function": "_check_readonly_fields_item",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/checks.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_128.py",
+    "vulnerable": false,
+    "function": "_distinct_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_129.py",
+    "vulnerable": false,
+    "function": "get_formatted_column_json",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/google_analytics4.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_130.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/azure_kusto.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_131.py",
+    "vulnerable": false,
+    "function": "get_function_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_132.py",
+    "vulnerable": false,
+    "function": "_select_field_str",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_133.py",
+    "vulnerable": false,
+    "function": "query_is_select_no_limit",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/__init__.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_134.py",
+    "vulnerable": false,
+    "function": "_create_missing_fk_index",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/mysql/schema.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_135.py",
+    "vulnerable": false,
+    "function": "parse_link_header",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/testutils/helpers/link_header.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_136.py",
+    "vulnerable": false,
+    "function": "_getattr",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/utils.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_137.py",
+    "vulnerable": false,
+    "function": "get_db_sizes",
+    "repo": "RedashSafe",
+    "source_file": "redash/monitor.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_138.py",
+    "vulnerable": false,
+    "function": "get_queries",
+    "repo": "RedashSafe",
+    "source_file": "redash/handlers/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_139.py",
+    "vulnerable": false,
+    "function": "_orderby_field",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_140.py",
+    "vulnerable": false,
+    "function": "duration_string",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/duration.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_141.py",
+    "vulnerable": false,
+    "function": "handle",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/management/commands/loaddata.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_142.py",
+    "vulnerable": false,
+    "function": "remove_field",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/base/schema.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_143.py",
+    "vulnerable": false,
+    "function": "_check_exclude",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/checks.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_144.py",
+    "vulnerable": false,
+    "function": "_avoid_cloning",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/query.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_145.py",
+    "vulnerable": false,
+    "function": "_sqlite_datetime_extract",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/_functions.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_146.py",
+    "vulnerable": false,
+    "function": "replace_table",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_147.py",
+    "vulnerable": false,
+    "function": "_find_odiff_binary",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/preprod/snapshots/image_diff/odiff.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_148.py",
+    "vulnerable": false,
+    "function": "encode",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/auth/hashers.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_149.py",
+    "vulnerable": false,
+    "function": "_unpack_items",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/datastructures.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_150.py",
+    "vulnerable": false,
+    "function": "handle_label",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/staticfiles/management/commands/findstatic.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_151.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/clickhouse/search_string.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_152.py",
+    "vulnerable": false,
+    "function": "_force_index_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_153.py",
+    "vulnerable": false,
+    "function": "_sqlite_time_diff",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/_functions.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_154.py",
+    "vulnerable": false,
+    "function": "log_change",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/admin/options.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_155.py",
+    "vulnerable": false,
+    "function": "make_request",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/utils/marketo_client.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_156.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_157.py",
+    "vulnerable": false,
+    "function": "make_style",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/termcolors.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_158.py",
+    "vulnerable": false,
+    "function": "_sqlite_exp",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/_functions.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_159.py",
+    "vulnerable": false,
+    "function": "get_frame_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_160.py",
+    "vulnerable": false,
+    "function": "select",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_161.py",
+    "vulnerable": false,
+    "function": "__repr__",
+    "repo": "DjangoSafe",
+    "source_file": "django/core/serializers/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_162.py",
+    "vulnerable": false,
+    "function": "test_connection",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/google_analytics.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_163.py",
+    "vulnerable": false,
+    "function": "_get_tables",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/databend.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_164.py",
+    "vulnerable": false,
+    "function": "generate_and_save_forecasts",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/issues/escalating/forecasts.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_165.py",
+    "vulnerable": false,
+    "function": "port",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/__init__.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_166.py",
+    "vulnerable": false,
+    "function": "urlencode",
+    "repo": "DjangoSafe",
+    "source_file": "django/http/request.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_167.py",
+    "vulnerable": false,
+    "function": "unescape_string_literal",
+    "repo": "DjangoSafe",
+    "source_file": "django/utils/text.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_168.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics_layer/query.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_169.py",
+    "vulnerable": false,
+    "function": "pipe",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_170.py",
+    "vulnerable": false,
+    "function": "as_select",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_171.py",
+    "vulnerable": false,
+    "function": "sort_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/utils/query_order.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_172.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_173.py",
+    "vulnerable": false,
+    "function": "get_columns",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/sql/query.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_174.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_175.py",
+    "vulnerable": false,
+    "function": "get_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_176.py",
+    "vulnerable": false,
+    "function": "get_repositories",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/integrations/github/integration.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_177.py",
+    "vulnerable": false,
+    "function": "delete_model",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/sqlite3/schema.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_178.py",
+    "vulnerable": false,
+    "function": "serialize_dashboard",
+    "repo": "RedashSafe",
+    "source_file": "redash/serializers/__init__.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_179.py",
+    "vulnerable": false,
+    "function": "crashed_users",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/snuba/metrics/fields/snql.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_180.py",
+    "vulnerable": false,
+    "function": "configuration_schema",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/ignite.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_181.py",
+    "vulnerable": false,
+    "function": "serialize_many",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/sentry_apps/services/app/impl.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_182.py",
+    "vulnerable": false,
+    "function": "periodic_job_definitions",
+    "repo": "RedashSafe",
+    "source_file": "redash/tasks/schedule.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_183.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/corporate_memory.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_184.py",
+    "vulnerable": false,
+    "function": "defer",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/query.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_185.py",
+    "vulnerable": false,
+    "function": "_create_point",
+    "repo": "DjangoSafe",
+    "source_file": "django/contrib/gis/geos/point.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_186.py",
+    "vulnerable": false,
+    "function": "__repr__",
+    "repo": "DjangoSafe",
+    "source_file": "django/template/base.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_187.py",
+    "vulnerable": false,
+    "function": "copy",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/expressions.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_188.py",
+    "vulnerable": false,
+    "function": "select_related",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/models/query.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_189.py",
+    "vulnerable": false,
+    "function": "run_query",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/duckdb.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_190.py",
+    "vulnerable": false,
+    "function": "replace_table",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/terms.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_191.py",
+    "vulnerable": false,
+    "function": "create_service_hook",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/testutils/factories.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_192.py",
+    "vulnerable": false,
+    "function": "get",
+    "repo": "SentrySafe",
+    "source_file": "src/sentry/replays/endpoints/project_replay_viewed_by.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_193.py",
+    "vulnerable": false,
+    "function": "aget_list_or_404",
+    "repo": "DjangoSafe",
+    "source_file": "django/shortcuts.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_194.py",
+    "vulnerable": false,
+    "function": "prep_cleanvalues",
+    "repo": "RedashSafe",
+    "source_file": "redash/models/changes.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_195.py",
+    "vulnerable": false,
+    "function": "_set_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/dialects.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_196.py",
+    "vulnerable": false,
+    "function": "get_primary_key_column",
+    "repo": "DjangoSafe",
+    "source_file": "django/db/backends/base/introspection.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_197.py",
+    "vulnerable": false,
+    "function": "_get_spreadsheet_service",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/google_spreadsheets.py",
+    "is_method": true
+  },
+  {
+    "file": "safe_198.py",
+    "vulnerable": false,
+    "function": "create_tables_from_query_ids",
+    "repo": "RedashSafe",
+    "source_file": "redash/query_runner/query_results.py",
+    "is_method": false
+  },
+  {
+    "file": "safe_199.py",
+    "vulnerable": false,
+    "function": "_set_sql",
+    "repo": "PyPikaSafe",
+    "source_file": "pypika/queries.py",
+    "is_method": true
+  }
+]

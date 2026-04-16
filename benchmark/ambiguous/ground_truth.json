@@ -1,0 +1,77 @@
+[
+  {
+    "file": "amb_01.py",
+    "vulnerable": false,
+    "note": "int() conversion \u2014 safe"
+  },
+  {
+    "file": "amb_02.py",
+    "vulnerable": false,
+    "note": "sanitize_input() \u2014 safe by intent"
+  },
+  {
+    "file": "amb_03.py",
+    "vulnerable": false,
+    "note": "whitelist validation \u2014 safe"
+  },
+  {
+    "file": "amb_04.py",
+    "vulnerable": false,
+    "note": "isinstance(int) check \u2014 safe"
+  },
+  {
+    "file": "amb_05.py",
+    "vulnerable": false,
+    "note": "param controls logic not SQL \u2014 safe"
+  },
+  {
+    "file": "amb_06.py",
+    "vulnerable": false,
+    "note": "regex numeric validation \u2014 safe"
+  },
+  {
+    "file": "amb_07.py",
+    "vulnerable": false,
+    "note": "fixed enum dict lookup \u2014 safe"
+  },
+  {
+    "file": "amb_08.py",
+    "vulnerable": true,
+    "note": "strip() is not sanitization \u2014 vulnerable"
+  },
+  {
+    "file": "amb_09.py",
+    "vulnerable": true,
+    "note": "prefix check bypassable \u2014 vulnerable"
+  },
+  {
+    "file": "amb_10.py",
+    "vulnerable": true,
+    "note": "float NaN bypass \u2014 vulnerable"
+  },
+  {
+    "file": "amb_11.py",
+    "vulnerable": true,
+    "note": "misleading helper name \u2014 vulnerable"
+  },
+  {
+    "file": "amb_12.py",
+    "vulnerable": false,
+    "note": "f-string schema but parameterized user_id \u2014 safe"
+  },
+  {
+    "file": "amb_13.py",
+    "vulnerable": true,
+    "note": "partial validation only \u2014 vulnerable"
+  },
+  {
+    "file": "amb_14.py",
+    "vulnerable": false,
+    "note": "ORM call not raw SQL \u2014 safe"
+  },
+  {
+    "file": "amb_15.py",
+    "vulnerable": true,
+    "note": "escape without parameterization \u2014 vulnerable"
+  }
+]

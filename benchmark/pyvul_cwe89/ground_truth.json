@@ -1,0 +1,366 @@
+[
+  {
+    "file": "pyvul_000.py",
+    "vulnerable": true,
+    "function": "paged_dropdown",
+    "commit": "https://github.com/archesproject/arches/commit/7ed53e23a616edf3301d95814d9d64de5e3072a9",
+    "note": "fixes #9019, #9021, #9026 in stable/7.1.1"
+  },
+  {
+    "file": "pyvul_001.py",
+    "vulnerable": true,
+    "function": "_convert_field_to_tz",
+    "commit": "https://github.com/django/django/commit/5e2f4ddf2940704a26a4ac782b851989668d74db",
+    "note": "Refs CVE-2022-34265 -- Unified DatabaseOperations._convert_*_to_tz() hook names."
+  },
+  {
+    "file": "pyvul_002.py",
+    "vulnerable": true,
+    "function": "get_prep_value",
+    "commit": "https://github.com/django/django/commit/5f0829a27e85d89ad8c433f5c6a7a7d17c9e9292",
+    "note": "[1.6.x] Fixed queries that may return unexpected results on MySQL due to typecas"
+  },
+  {
+    "file": "pyvul_003.py",
+    "vulnerable": true,
+    "function": "get_prep_value",
+    "commit": "https://github.com/django/django/commit/985434fb1d6bf2335bf96c6ebf91c3674f1f399f",
+    "note": "[1.5.x] Fixed queries that may return unexpected results on MySQL due to typecas"
+  },
+  {
+    "file": "pyvul_004.py",
+    "vulnerable": true,
+    "function": "get_prep_value",
+    "commit": "https://github.com/django/django/commit/aa80f498de6d687e613860933ac58433ab71ea4b",
+    "note": "[1.4.x] Fixed queries that may return unexpected results on MySQL due to typecas"
+  },
+  {
+    "file": "pyvul_005.py",
+    "vulnerable": true,
+    "function": "explain_query_prefix",
+    "commit": "https://github.com/django/django/commit/6723a26e59b0b5429a0c5873941e01a2e1bdbb81",
+    "note": "Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQL inject"
+  },
+  {
+    "file": "pyvul_006.py",
+    "vulnerable": true,
+    "function": "explain",
+    "commit": "https://github.com/django/django/commit/6723a26e59b0b5429a0c5873941e01a2e1bdbb81",
+    "note": "Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQL inject"
+  },
+  {
+    "file": "pyvul_007.py",
+    "vulnerable": true,
+    "function": "explain_query_prefix",
+    "commit": "https://github.com/django/django/commit/00b0fc50e1738c7174c495464a5ef069408a4402",
+    "note": "[4.0.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_008.py",
+    "vulnerable": true,
+    "function": "explain",
+    "commit": "https://github.com/django/django/commit/00b0fc50e1738c7174c495464a5ef069408a4402",
+    "note": "[4.0.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_009.py",
+    "vulnerable": true,
+    "function": "explain_query_prefix",
+    "commit": "https://github.com/django/django/commit/29a6c98b4c13af82064f993f0acc6e8fafa4d3f5",
+    "note": "[2.2.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_010.py",
+    "vulnerable": true,
+    "function": "explain",
+    "commit": "https://github.com/django/django/commit/29a6c98b4c13af82064f993f0acc6e8fafa4d3f5",
+    "note": "[2.2.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_011.py",
+    "vulnerable": true,
+    "function": "explain_query_prefix",
+    "commit": "https://github.com/django/django/commit/9e19accb6e0a00ba77d5a95a91675bf18877c72d",
+    "note": "[3.2.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_012.py",
+    "vulnerable": true,
+    "function": "explain",
+    "commit": "https://github.com/django/django/commit/9e19accb6e0a00ba77d5a95a91675bf18877c72d",
+    "note": "[3.2.x] Fixed CVE-2022-28347 -- Protected QuerySet.explain(**options) against SQ"
+  },
+  {
+    "file": "pyvul_013.py",
+    "vulnerable": true,
+    "function": "add_ordering",
+    "commit": "https://github.com/django/django/commit/0bd57a879a0d54920bb9038a732645fb917040e9",
+    "note": "[3.1.x] Fixed CVE-2021-35042 -- Prevented SQL injection in QuerySet.order_by().\n"
+  },
+  {
+    "file": "pyvul_014.py",
+    "vulnerable": true,
+    "function": "add_ordering",
+    "commit": "https://github.com/django/django/commit/a34a5f724c5d5adb2109374ba3989ebb7b11f81f",
+    "note": "[3.2.x] Fixed CVE-2021-35042 -- Prevented SQL injection in QuerySet.order_by().\n"
+  },
+  {
+    "file": "pyvul_015.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/django/django/commit/eb31d845323618d688ad429479c6dda973056136",
+    "note": "Fixed CVE-2020-7471 -- Properly escaped StringAgg(delimiter) parameter."
+  },
+  {
+    "file": "pyvul_016.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/django/django/commit/001b0634cd309e372edb6d7d95d083d02b8e37bd",
+    "note": "[1.11.x] Fixed CVE-2020-7471 -- Properly escaped StringAgg(delimiter) parameter."
+  },
+  {
+    "file": "pyvul_017.py",
+    "vulnerable": true,
+    "function": "where_in",
+    "commit": "https://github.com/apache/superset/commit/1d403dab9822a8cee6108669c53e53fad881c751",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)\n\n(cherry picked from commit 565"
+  },
+  {
+    "file": "pyvul_018.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/apache/superset/commit/1d403dab9822a8cee6108669c53e53fad881c751",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)\n\n(cherry picked from commit 565"
+  },
+  {
+    "file": "pyvul_019.py",
+    "vulnerable": true,
+    "function": "where_in.quote",
+    "commit": "https://github.com/apache/superset/commit/1d403dab9822a8cee6108669c53e53fad881c751",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)\n\n(cherry picked from commit 565"
+  },
+  {
+    "file": "pyvul_020.py",
+    "vulnerable": true,
+    "function": "where_in.quote",
+    "commit": "https://github.com/apache/superset/commit/34101594e284ab3acce692f41aff7759ccb4bf1d",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)"
+  },
+  {
+    "file": "pyvul_021.py",
+    "vulnerable": true,
+    "function": "where_in",
+    "commit": "https://github.com/apache/superset/commit/34101594e284ab3acce692f41aff7759ccb4bf1d",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)"
+  },
+  {
+    "file": "pyvul_022.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/apache/superset/commit/34101594e284ab3acce692f41aff7759ccb4bf1d",
+    "note": "fix: DB-specific quoting in Jinja macro (#25779)"
+  },
+  {
+    "file": "pyvul_023.py",
+    "vulnerable": true,
+    "function": "create_postgres_db",
+    "commit": "https://github.com/blue-yonder/postgraas_server/commit/7cd8d016edc74a78af0d81c948bfafbcc93c937c",
+    "note": "Harden the database creation against SQL injections\n\nIf using the PostgreSQL bac"
+  },
+  {
+    "file": "pyvul_024.py",
+    "vulnerable": true,
+    "function": "check_db_or_user_exists",
+    "commit": "https://github.com/blue-yonder/postgraas_server/commit/7cd8d016edc74a78af0d81c948bfafbcc93c937c",
+    "note": "Harden the database creation against SQL injections\n\nIf using the PostgreSQL bac"
+  },
+  {
+    "file": "pyvul_025.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/django/django/commit/505826b469b16ab36693360da9e11fd13213421b",
+    "note": "[3.0.x] Fixed CVE-2020-7471 -- Properly escaped StringAgg(delimiter) parameter."
+  },
+  {
+    "file": "pyvul_026.py",
+    "vulnerable": true,
+    "function": "__init__",
+    "commit": "https://github.com/django/django/commit/c67a368c16e4680b324b4f385398d638db4d8147",
+    "note": "[2.2.x] Fixed CVE-2020-7471 -- Properly escaped StringAgg(delimiter) parameter."
+  },
+  {
+    "file": "pyvul_027.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/4f5b58f5cd3c57fee9972ab074f8dc6895d8f387",
+    "note": "[2.2.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index lo"
+  },
+  {
+    "file": "pyvul_028.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/4f5b58f5cd3c57fee9972ab074f8dc6895d8f387",
+    "note": "[2.2.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index lo"
+  },
+  {
+    "file": "pyvul_029.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/ed682a24fca774818542757651bfba576c3fc3ef",
+    "note": "[1.11.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index l"
+  },
+  {
+    "file": "pyvul_030.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/ed682a24fca774818542757651bfba576c3fc3ef",
+    "note": "[1.11.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index l"
+  },
+  {
+    "file": "pyvul_031.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/f74b3ae3628c26e1b4f8db3d13a91d52a833a975",
+    "note": "[2.1.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index lo"
+  },
+  {
+    "file": "pyvul_032.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/f74b3ae3628c26e1b4f8db3d13a91d52a833a975",
+    "note": "[2.1.x] Fixed CVE-2019-14234 -- Protected JSONField/HStoreField key and index lo"
+  },
+  {
+    "file": "pyvul_033.py",
+    "vulnerable": true,
+    "function": "get_nodes_like",
+    "commit": "https://github.com/rtxteam/rtx/commit/fa2797e656e3dba18f990a2db1f0f029d41f1921",
+    "note": "avoid SQL injection exploits"
+  },
+  {
+    "file": "pyvul_034.py",
+    "vulnerable": true,
+    "function": "export_sql",
+    "commit": "https://github.com/OpenAdaptAI/OpenAdapt/commit/9dc1850918e81648b9885dd8a1be836d5e8d95ef",
+    "note": "modify export_sql to use paramerterized queries to prevent sql injection"
+  },
+  {
+    "file": "pyvul_035.py",
+    "vulnerable": true,
+    "function": "get_e55_domain",
+    "commit": "https://github.com/archesproject/arches/commit/7ed53e23a616edf3301d95814d9d64de5e3072a9",
+    "note": "fixes #9019, #9021, #9026 in stable/7.1.1"
+  },
+  {
+    "file": "pyvul_036.py",
+    "vulnerable": true,
+    "function": "savepoint",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_037.py",
+    "vulnerable": true,
+    "function": "rollback_to",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_038.py",
+    "vulnerable": true,
+    "function": "release",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_039.py",
+    "vulnerable": true,
+    "function": "savepoint",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_040.py",
+    "vulnerable": true,
+    "function": "rollback_to",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_041.py",
+    "vulnerable": true,
+    "function": "release",
+    "commit": "https://github.com/piccolo-orm/piccolo/commit/82679eb8cd1449cf31d87c9914a072e70168b6eb",
+    "note": "Merge pull request from GHSA-xq59-7jf3-rjc6\n\nCo-authored-by: skelmis <ethan.mcke"
+  },
+  {
+    "file": "pyvul_042.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/0dc9c016fadb71a067e5a42be30164e3f96c0492",
+    "note": "[4.0.x] Fixed CVE-2022-34265 -- Protected Trunc(kind)/Extract(lookup_name) again"
+  },
+  {
+    "file": "pyvul_043.py",
+    "vulnerable": true,
+    "function": "as_sql",
+    "commit": "https://github.com/django/django/commit/a9010fe5555e6086a9d9ae50069579400ef0685e",
+    "note": "[3.2.x] Fixed CVE-2022-34265 -- Protected Trunc(kind)/Extract(lookup_name) again"
+  },
+  {
+    "file": "pyvul_044.py",
+    "vulnerable": true,
+    "function": "add_annotation",
+    "commit": "https://github.com/django/django/commit/93cae5cb2f9a4ef1514cf1a41f714fef08005200",
+    "note": "Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and extra() "
+  },
+  {
+    "file": "pyvul_045.py",
+    "vulnerable": true,
+    "function": "add_extra",
+    "commit": "https://github.com/django/django/commit/93cae5cb2f9a4ef1514cf1a41f714fef08005200",
+    "note": "Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and extra() "
+  },
+  {
+    "file": "pyvul_046.py",
+    "vulnerable": true,
+    "function": "add_extra",
+    "commit": "https://github.com/django/django/commit/2044dac5c6968441be6f534c4139bcf48c5c7e48",
+    "note": "[3.2.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  },
+  {
+    "file": "pyvul_047.py",
+    "vulnerable": true,
+    "function": "add_annotation",
+    "commit": "https://github.com/django/django/commit/2044dac5c6968441be6f534c4139bcf48c5c7e48",
+    "note": "[3.2.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  },
+  {
+    "file": "pyvul_048.py",
+    "vulnerable": true,
+    "function": "add_annotation",
+    "commit": "https://github.com/django/django/commit/2c09e68ec911919360d5f8502cefc312f9e03c5d",
+    "note": "[2.2.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  },
+  {
+    "file": "pyvul_049.py",
+    "vulnerable": true,
+    "function": "add_extra",
+    "commit": "https://github.com/django/django/commit/2c09e68ec911919360d5f8502cefc312f9e03c5d",
+    "note": "[2.2.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  },
+  {
+    "file": "pyvul_050.py",
+    "vulnerable": true,
+    "function": "add_annotation",
+    "commit": "https://github.com/django/django/commit/800828887a0509ad1162d6d407e94d8de7eafc60",
+    "note": "[4.0.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  },
+  {
+    "file": "pyvul_051.py",
+    "vulnerable": true,
+    "function": "add_extra",
+    "commit": "https://github.com/django/django/commit/800828887a0509ad1162d6d407e94d8de7eafc60",
+    "note": "[4.0.x] Fixed CVE-2022-28346 -- Protected QuerySet.annotate(), aggregate(), and "
+  }
+]

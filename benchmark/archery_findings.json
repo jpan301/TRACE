@@ -1,0 +1,215 @@
+[
+  {
+    "file": "/Users/jia/ArcheryVuln/common/utils/chart_dao.py",
+    "line": 12,
+    "function": "__query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/utils/sql_review.py",
+    "line": 154,
+    "function": "can_cancel",
+    "sink": "can_execute",
+    "flow": [
+      "user (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/goinception.py",
+    "line": 153,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/clickhouse.py",
+    "line": 130,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/mssql.py",
+    "line": 311,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/mssql.py",
+    "line": 310,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "db_name (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/pgsql.py",
+    "line": 183,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/pgsql.py",
+    "line": 178,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "max_execution_time = kwargs.get('max_execution_time', 0)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/pgsql.py",
+    "line": 182,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "schema_name = kwargs.get('schema_name')"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 580,
+    "function": "explain_check",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 574,
+    "function": "explain_check",
+    "sink": "cursor.execute",
+    "flow": [
+      "db_name (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 647,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 640,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "db_name (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 644,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 1218,
+    "function": "backup",
+    "sink": "cursor.execute",
+    "flow": [
+      "begin_time (function parameter \u2014 untrusted)",
+      "logmnr_start_sql = f\"begin\\n                                        dbms_logmnr.start_logmnr(\\n                                        starttime=>to_date('{begin_time}','yyyy-mm-dd hh24:mi:ss'),\\n                                        endtime=>to_date('{end_time}','yyyy/mm/dd hh24:mi:ss'),\\n                                        options=>dbms_logmnr.dict_from_online_catalog + dbms_logmnr.continuous_mine);\\n                                    end;\""
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 1277,
+    "function": "metdata_backup",
+    "sink": "backup_cursor.execute",
+    "flow": [
+      "redo_sql (function parameter \u2014 untrusted)",
+      "sql = f\"insert into sql_rollback(redo_sql,undo_sql,workflow_id) values('{redo_sql}','{undo_sql}',{workflow_id});\""
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/oracle.py",
+    "line": 1347,
+    "function": "sqltuningadvisor",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)",
+      "create_task_sql = f\"DECLARE\\n                                  my_task_name VARCHAR2(30);\\n                                  my_sqltext  CLOB;\\n                                  BEGIN\\n                                  my_sqltext := '{sql}';\\n                                  my_task_name := DBMS_SQLTUNE.CREATE_TUNING_TASK(\\n                                  sql_text    => my_sqltext,\\n                                  user_name   => '{db_name}',\\n                                  scope       => 'COMPREHENSIVE',\\n                                  time_limit  => 30,\\n                                  task_name   => '{task_name}',\\n                                  description => 'tuning');\\n                                  DBMS_SQLTUNE.EXECUTE_TUNING_TASK( task_name => '{task_name}');\\n                                  END;\""
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/phoenix.py",
+    "line": 96,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/mysql.py",
+    "line": 341,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "sql (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/mysql.py",
+    "line": 338,
+    "function": "query",
+    "sink": "cursor.execute",
+    "flow": [
+      "max_execution_time = kwargs.get('max_execution_time', 0)"
+    ],
+    "source": "broad_param"
+  },
+  {
+    "file": "/Users/jia/ArcheryVuln/sql/engines/mysql.py",
+    "line": 506,
+    "function": "execute_workflow",
+    "sink": "self.inc_engine.execute",
+    "flow": [
+      "workflow (function parameter \u2014 untrusted)"
+    ],
+    "source": "broad_param"
+  }
+]
