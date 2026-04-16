@@ -17,8 +17,12 @@ except ImportError:
 TRACE_LLM_BACKEND = "openai" if (os.environ.get("OPENAI_API_KEY") and OPENAI_AVAILABLE) else "anthropic"
 TRACE_LLM_MODEL = os.environ.get("TRACE_LLM_MODEL", "gpt-4.1" if TRACE_LLM_BACKEND == "openai" else "claude-opus-4-5")
 
-from autogen_core import MessageContext
-from auditzoo import BaseAnalysisAgent, Request, Response
+try:
+    from autogen_core import MessageContext
+    from auditzoo import BaseAnalysisAgent, Request, Response
+    AUDITZOO_AVAILABLE = True
+except ImportError:
+    AUDITZOO_AVAILABLE = False
 
 
 # --- these are the places where user input enters the program ---
